@@ -11,8 +11,16 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 def cosine_sim(a: np.ndarray, b: np.ndarray) -> float:
     """
     Compute cosine similarity between two vectors.
+    Returns 0 if either vector has zero norm.
     """
-    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+    norm_a = np.linalg.norm(a)
+    norm_b = np.linalg.norm(b)
+    
+    # Handle zero vectors by returning 0 similarity
+    if norm_a == 0 or norm_b == 0:
+        return 0.0
+    
+    return float(np.dot(a, b) / (norm_a * norm_b))
 
 def evaluate_similarity(predictions: list[float], gold_scores: np.ndarray) -> dict[str, float]:
     """

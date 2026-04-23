@@ -5,8 +5,8 @@ Semantic similarity evaluation using SBERT and TF-IDF baselines.
 import pandas as pd
 import numpy as np
 import logging
-from src.utils.data_loader import load_stsb_dataset, get_sbert_embeddings, get_tfidf_embeddings
-from src.evaluation.metrics import evaluate_similarity, compute_tfidf_similarity, cosine_sim
+from utils.data_loader import load_stsb_dataset, get_sbert_embeddings, get_tfidf_embeddings
+from evaluation.metrics import evaluate_similarity, compute_tfidf_similarity, cosine_sim
 import os
 import json
 
