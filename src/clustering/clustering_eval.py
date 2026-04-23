@@ -6,8 +6,8 @@ import pandas as pd
 import numpy as np
 import logging
 from sklearn.cluster import KMeans
-from src.utils.data_loader import load_clustering_dataset, get_sbert_embeddings, get_tfidf_embeddings
-from src.evaluation.metrics import evaluate_clustering
+from utils.data_loader import load_clustering_dataset, get_sbert_embeddings, get_tfidf_embeddings
+from evaluation.metrics import evaluate_clustering
 import os
 import json
 
