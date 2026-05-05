@@ -1,4 +1,4 @@
-# Text Information Retrieval - Tech Review
+# Text Information Systems - Tech Review
 Tech Review for Text Information Retrieval @ UIUC
 
 ## Project: Evaluating Sentence-BERT for Semantic Similarity and Document Clustering
